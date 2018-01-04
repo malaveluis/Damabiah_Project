@@ -1,0 +1,19 @@
+.navigationBar {
+  min-height: 40px;
+  .navigationBar-menu {
+    text-align: center;
+    color: #333333;
+    .navigationBar-button {
+      width: 13%;
+      button:hover {
+        color: #f7941e;
+      }
+    }
+    .navigationBar-buttonSpecial {
+      width: 21%;
+    }
+    .navigationBar-logo {
+      width: 100%;
+    }
+  }
+}

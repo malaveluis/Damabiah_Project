@@ -12,7 +12,7 @@ const reload = browserSync.reload;
 let dev = true;
 
 gulp.task('concatController', () => {
-  return gulp.src('app/scripts/**/*.js')
+  return gulp.src('app/scripts/controllers/*.js')
     .pipe(concat('controllerMain.js'))
     .pipe(gulp.dest('app/scripts'))
 });
