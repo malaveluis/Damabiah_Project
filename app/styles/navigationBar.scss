@@ -1,12 +1,21 @@
 .navigationBar {
+  position: absolute;
+  width: 100%;
   min-height: 40px;
+  z-index: 66;
   .navigationBar-menu {
     text-align: center;
-    color: #333333;
     .navigationBar-button {
       width: 13%;
-      button:hover {
-        color: #f7941e;
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: middle;
+      a {
+        color: #333333;
+        font-weight: 600;
+      }
+      a:hover {
+        text-decoration: none;
       }
     }
     .navigationBar-buttonSpecial {
