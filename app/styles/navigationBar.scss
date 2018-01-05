@@ -11,8 +11,10 @@
       display: inline-block;
       vertical-align: middle;
       a {
-        color: #333333;
+        font-size: 13px;
+        color: #666;
         font-weight: 600;
+        letter-spacing: 1px;
       }
       a:hover {
         text-decoration: none;
@@ -23,6 +25,7 @@
     }
     .navigationBar-logo {
       width: 100%;
+      vertical-align: inherit;
     }
   }
 }
