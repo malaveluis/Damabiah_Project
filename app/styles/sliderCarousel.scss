@@ -10,13 +10,33 @@
 .sliderCarousel_heroText {
   position: absolute;
   width: 100%;
-  top: 33%;
+  top: 55%;
   .container {
     text-align: left;
     h6 {
       color: #ffffff;
-      font-size: 33px;
-      font-weight: 700;
+      font-size: 66px;
+      font-weight: 800;
+    }
+    p {
+      color: #ffffff;
+      font-size: 17px;
+      font-weight: 300;
+    }
+    span {
+      width: 100px;
+      display: block;
+      border-bottom: 8px #ffffff solid;
+      margin-bottom: 13px;
+    }
+  }
+}
+
+.owl-carousel {
+  .owl-item {
+    img {
+      width: auto;
+      height: 100%;
     }
   }
 }

@@ -4,24 +4,31 @@
   min-height: 40px;
   z-index: 66;
   .navigationBar-menu {
-    text-align: center;
+    padding: 0px;
     .navigationBar-button {
       width: 13%;
       overflow: hidden;
       display: inline-block;
       vertical-align: middle;
+      text-align: center;
+      float: right;
       a {
         font-size: 13px;
         color: #666;
         font-weight: 600;
         letter-spacing: 1px;
+        text-align: center;
       }
       a:hover {
         text-decoration: none;
       }
     }
     .navigationBar-buttonSpecial {
-      width: 21%;
+      width: 23%;
+      float: left;
+      button {
+        padding: 0px;
+      }
     }
     .navigationBar-logo {
       width: 100%;
@@ -29,3 +36,21 @@
     }
   }
 }
+
+@media all and (max-width: 1199px) {} 
+@media all and (max-width: 991px) {
+  .navigationBar {
+    position: relative;
+    .navigationBar-button {
+      width: 100% !important;
+      display: block !important;
+      text-align: left !important;
+      border-bottom: 1px solid;
+    }
+    .navigationBar-buttonSpecial {
+      width: 50% !important;
+    }
+  }
+} 
+@media all and (max-width: 768px) {} 
+@media all and (max-width: 575px) {}
