@@ -127,6 +127,7 @@ gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 gulp.task('serve', () => {
   runSequence(['clean', 'wiredep'], ['styles', 'scripts', 'fonts', 'concatController'], () => {
     browserSync.init({
+      open: false,
       notify: false,
       port: 9000,
       server: {
