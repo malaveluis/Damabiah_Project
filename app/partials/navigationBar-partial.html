@@ -1,47 +1,4 @@
-<!-- <div ng-controller="DemoBasicCtrl as ctrl" ng-cloak>
-  <md-toolbar class="md-menu-toolbar navigationBar">
-    <div layout="row">
-      <div class="container">
-        <md-menu-bar class="menu--adsila navigationBar-menu ">
-          <md-menu class="navigationBar-buttonSpecial">
-            <button ng-click="$mdOpenMenu()">
-              <img class="navigationBar-logo" src="images/MalaveHernandez_Logo.png" />
-            </button>
-          </md-menu>
-          <md-menu class="menu__item navigationBar-button">
-            <button class="menu__item-name" ng-click="$mdOpenMenu()">
-              <a>
-                <span>Contacto</span>
-              </a>
-            </button>
-          </md-menu>
-          <md-menu class="menu__item navigationBar-button">
-            <button class="menu__item-name" ng-click="$mdOpenMenu()">
-              <a>
-                <span>M&H</span>
-              </a>
-            </button>
-          </md-menu>
-          <md-menu class="menu__item navigationBar-button">
-            <button class="menu__item-name" ng-click="$mdOpenMenu()">
-              <a>
-                <span>Servicios</span>
-              </a>
-            </button>
-          </md-menu>
-          <md-menu class="menu__item navigationBar-button">
-            <button class="menu__item-name" >
-              <a href="projects.html">
-                <span>Proyectos</span>
-              </a>
-            </button>
-          </md-menu>
-        </md-menu-bar>
-      </div>
-    </div>
-  </md-toolbar>
-</div> -->
-<nav class="navbar navbar-default">
+<nav class="navigationBar navbar">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -52,57 +9,18 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Brand</a>
+      <a class="navigationBar-logo navbar-brand" href="#">
+        <img src="images/MalaveHernandez_Logo.png"></img>
+      </a>
     </div>
-
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active">
-          <a href="#">Link
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li>
-          <a href="/projects.html">Link</a>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown
-            <span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu">
-            <li>
-              <a href="#">Action</a>
-            </li>
-            <li>
-              <a href="#">Another action</a>
-            </li>
-            <li>
-              <a href="#">Something else here</a>
-            </li>
-            <li role="separator" class="divider"></li>
-            <li>
-              <a href="#">Separated link</a>
-            </li>
-            <li role="separator" class="divider"></li>
-            <li>
-              <a href="#">One more separated link</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <a href="#">Link</a>
+          <a href="/projects.html">Proyectos</a>
         </li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios
             <span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
@@ -120,6 +38,12 @@
               <a href="#">Separated link</a>
             </li>
           </ul>
+        </li>
+        <li>
+          <a href="/projects.html">M&H</a>
+        </li>
+        <li>
+          <a href="/projects.html">Contacto</a>
         </li>
       </ul>
     </div>

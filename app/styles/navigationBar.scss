@@ -1,58 +1,29 @@
 .navigationBar {
-  position: absolute;
-  width: 100%;
-  min-height: 40px;
+  margin: 0 !important;
+  position: relative;
+  font-weight: 800;
   z-index: 66;
-  .navigationBar-menu {
-    padding: 0px;
-    .navigationBar-button {
-      width: 13%;
-      overflow: hidden;
-      vertical-align: middle;
-      text-align: center;
-      float: right;
-      a {
-        font-size: 13px;
-        color: #666;
-        font-weight: 600;
-        letter-spacing: 1px;
-        text-align: center;
-      }
-      a:hover {
-        text-decoration: none;
-      }
-      button {
-        margin: 0 auto;
-      }
+  li {
+    a {
+      color: #000000;
     }
-    .navigationBar-buttonSpecial {
-      width: 23%;
-      float: left;
-      button {
-        padding: 0px;
-      }
-    }
-    .navigationBar-logo {
-      width: 100%;
-      vertical-align: inherit;
+  }
+  .navbar-toggle {
+    .icon-bar {
+      height: 3px;
+      background: orange;
     }
   }
 }
 
-@media all and (max-width: 1199px) {} 
-@media all and (max-width: 991px) {
-  .navigationBar {
-    position: relative;
-    .navigationBar-button {
-      width: 100% !important;
-      display: block !important;
-      text-align: left !important;
-      border-bottom: 1px solid;
-    }
-    .navigationBar-buttonSpecial {
-      width: 50% !important;
-    }
+.navigationBar-logo {
+  img {
+    height: 15px;
+    margin: 2.5px 0px;
   }
-} 
+}
+
+@media all and (max-width: 1199px) {} 
+@media all and (max-width: 991px) {}
 @media all and (max-width: 768px) {} 
 @media all and (max-width: 575px) {}
